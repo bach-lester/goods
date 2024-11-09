@@ -6,6 +6,14 @@ const userStore = useUserStore()
 
 <template>
   <div>
+    <h1></h1>
+    <h1></h1>
+    <router-view></router-view>
+    <h1></h1>
+    <hr />
+  </div>
+
+  <div>
     I am App
     <p>{{ userStore.token }}</p>
     <el-button @click="userStore.setToken('hahaha周子颜是我的性奴')"
